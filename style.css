@@ -147,3 +147,42 @@ footer a:hover {
     max-height: 100px; /* Adjust logo size for smaller screens */
   }
 }
+
+/* Modal style */
+.modal-dialog {
+  max-width: 900px; /* Makes the modal wider */
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-inner img {
+  max-height: 600px; /* Makes images bigger but responsive */
+  object-fit: cover; /* Keeps aspect ratio */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.photo-descriptions {
+  font-size: 1.1rem; /* Makes the text a little larger */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Makes the controls more visible */
+  padding: 10px;
+  border-radius: 50%;
+}

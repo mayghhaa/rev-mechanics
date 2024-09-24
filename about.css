@@ -1,10 +1,38 @@
-/* General Styles */
+/* General Body Styling */
 body {
   font-family: Arial, sans-serif;
-  color: #fff;
-  background-color: #000;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
   margin: 0;
   padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000; /* Black navbar */
+  padding: 15px;
+}
+
+.navbar-brand img {
+  max-height: 50px; /* Adjust logo height */
+}
+
+.nav-link {
+  color: #fff; /* White links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff1c1c; /* Red hover */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28white, 255, 255, 255%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
 .navbar-center {
@@ -13,119 +41,61 @@ body {
   transform: translateX(-50%);
 }
 
-footer {
-  background-color: #000;
-  color: #ffffff;
-  padding: 10px 0;
+/* About Us Section */
+h1 {
+  color: #ff1c1c; /* Red heading */
 }
 
-footer .text-center {
-  margin: 0;
-}
-
-/* Section Styles */
-.section {
-  padding: 60px 0;
-  color: #fff;
-}
-
-h1,
-h2,
-h4 {
-  color: #e0e0e0;
-}
-
-h2 {
-  border-bottom: 2px solid #a0a0a0;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-}
-
-h4 {
-  color: #d8a0e0;
-}
-
-/* Container and Rows */
-.container {
-  padding: 0 15px;
-}
-
-/* Team Roles, Products, and Unique Ideas */
-.team-role,
-.product,
-.idea {
-  margin-bottom: 30px;
-}
-
-.team-role h4,
-.product h4,
-.idea h4 {
-  color: #d8a0e0;
-}
-
-.team-role p,
-.product p,
-.idea p {
-  color: #b0b0b0;
-}
-
-/* Gallery Styles */
-.photo-gallery {
-  padding: 20px 0;
-}
-
-.photo-gallery .col {
-  position: relative;
-  overflow: hidden;
-}
-
-.photo-gallery img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.photo-gallery .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(128, 0, 128, 0.5); /* Translucent purple */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1;
-}
-
-.photo-gallery .position-relative:hover .overlay {
-  opacity: 1;
-}
-
-/* Modal Styles */
-.modal-content {
-  background-color: #222;
-  color: #fff;
-}
-
-.carousel-item img {
-  height: 400px; /* Adjust as needed */
-  object-fit: cover;
-}
-
-.carousel-caption {
-  color: #fff;
-}
-
-/* Paragraph Section */
-.large-paragraph {
-  margin-top: 40px;
+.container.section {
+  background-color: #1c1c1c; /* Dark gray background for container */
   padding: 20px;
-  background-color: #333;
-  border: 1px solid #444;
+  border-radius: 10px;
 }
 
-.large-paragraph p {
-  color: #ddd;
-  line-height: 1.6;
+/* Team Roles Section */
+h2 {
+  color: #ff1c1c; /* Red headings */
+}
+
+.team-role h4 {
+  color: #ff1c1c; /* Red subheadings */
+}
+
+/* Products Section */
+h4 {
+  color: #ff1c1c; /* Red headings */
+}
+
+/* Unique Ideas Section */
+.idea h4 {
+  color: #ff1c1c; /* Red headings */
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c; /* Dark gray footer */
+  color: #fff; /* White text */
+  padding: 20px;
+}
+
+footer a {
+  color: #ff1c1c; /* Red links in footer */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Full Width Image */
+.full-width-image img {
+  border-bottom: 5px solid #ff1c1c; /* Red border below image */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-center {
+    position: relative;
+    transform: none;
+    left: 0;
+  }
 }
